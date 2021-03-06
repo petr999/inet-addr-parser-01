@@ -33,7 +33,7 @@ ip_addresses.zip                100%[===========================================
                                                                                                                                
 2021-03-05 21:44:44 (5.23 MB/s) - ‘ip_addresses.zip’ saved [2147483647/2147483647]                                             
 ```
-The file downloaded is unusable as both the PKWare's and InfoZIP's format assume to keep the file list at the end of the ZIP archive. There is no any list of archived files at the end of it. It's explainable as the claimed file size was ~20GB.
+The file downloaded is unusable as both the PKWare's and InfoZIP's format assume to keep the file list at the end of the ZIP archive. There is no any list of archived files at the end of it. It's explainable as the claimed file size was ~20GB against the downloaded 2GB.
 
 After the file got deleted and download started again and interrupted, it can be requested from web server with an offset HTTP header to skip the bytes downloaded previously. This is the only way the user can download it at full. The file downloaded is usable afterwards.
 ```
